@@ -1,7 +1,7 @@
 FROM alpine:latest
 MAINTAINER Ankit R Gadiya <me@argp.in>
 
-ENV version 2.3
+ENV version 2.3.1
 RUN apk --update --no-cache add make \
 	&& wget https://github.com/jgm/pandoc/releases/download/${version}/pandoc-${version}-linux.tar.gz \
 	&& tar -xvf pandoc-${version}-linux.tar.gz \
