@@ -8,4 +8,4 @@ RUN apk --update --no-cache add make tree findutils \
 	&& mv pandoc-${version}/bin/pandoc /usr/local/bin \
 	&& rm -rf pandoc-${version}*
 
-ENTRYPOINT ["/usr/local/bin/pandoc"]
+CMD ["/usr/local/bin/pandoc"]
